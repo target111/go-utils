@@ -76,3 +76,7 @@ func Max(x []int) int {
 	}
 	return max
 }
+
+func toCharStr(i int) string {
+	return string('A' + i)
+}
