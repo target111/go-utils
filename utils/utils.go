@@ -17,6 +17,15 @@ func Str2Int(str string) int {
 		return i;
 }
 
+//Str2Int converts a string to an int and handles errors
+func Int2Str(i int) string {
+	str, err := strconv.Itoa(i)
+		if err != nil {
+			log.Fatal(err)
+		}
+		return str;
+}
+
 //gets the sum of all values in a slice of ints
 func GetSum(list []int) int {
 	sum := 0
